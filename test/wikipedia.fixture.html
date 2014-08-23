@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Ray tracing (graphics) - Wikipedia, the free encyclopedia</title>
+<meta name="generator" content="MediaWiki 1.24wmf17" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Ray_tracing_(graphics)" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit" />
+<link rel="apple-touch-icon" href="//bits.wikimedia.org/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="//bits.wikimedia.org/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="http://en.wikipedia.org/wiki/Ray_tracing_(graphics)" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cteahouse%7Cext.math.styles%7Cext.rtlcite%2Cwikihiero%7Cext.uls.nojs%7Cext.visualEditor.viewPageTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:3904d24a08aa08f6a68dc338f9be277e */</style>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Ray_tracing_(graphics)","wgTitle":"Ray tracing (graphics)","wgCurRevisionId":611112877,"wgRevisionId":611112877,"wgArticleId":26000,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from March 2008","All articles needing additional references","Duplicate articles","All articles with unsourced statements","Articles with unsourced statements from May 2013","Commons category with local link same as on Wikidata","Ray tracing (graphics)","Geometrical optics","Virtual reality","Global illumination algorithms","Computer graphics"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Ray_tracing_(graphics)","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"preview":false,"previewDialog":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgVisualEditor":{"isPageWatched":false,"magnifyClipIconURL":"//bits.wikimedia.org/static-1.24wmf17/skins/common/images/magnify-clip.png","pageLanguageCode":"en","pageLanguageDir":"ltr","svgMaxSize":2048,"namespacesWithSubpages":{"6":0,"8":0,"1":true,"2":true,"3":true,"4":true,"5":true,"7":true,"9":true,"10":true,"11":true,"12":true,"13":true,"14":true,"15":true,"100":true,"101":true,"102":true,"103":true,"104":true,"105":true,"106":true,"107":true,"108":true,"109":true,"110":true,"111":true,"447":true,"2600":false,"828":true,"829":true}},"wikilove-recipient":"","wikilove-anon":0,"wgGuidedTourHelpGuiderUrl":"Help:Guided tours/guider","wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q619942"});
+}</script><script>if(window.mw){mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":false,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,
+"watchrollback":0,"wllimit":250,"useeditwarning":1,"prefershttps":1,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"visualeditor-enable":0,"visualeditor-betatempdisable":0,"visualeditor-enable-experimental":0,"visualeditor-enable-language":0,"visualeditor-hidebetawelcome":0,"wikilove-enabled":1,"mathJax":false,"echo-subscriptions-web-page-review":true,"echo-subscriptions-email-page-review":false,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"echo-subscriptions-web-education-program":true,"echo-subscriptions-email-education-program":false,"echo-notify-show-link":true,"echo-show-alert":true,"echo-email-frequency":0,"echo-email-format":"html","echo-subscriptions-email-system":true,"echo-subscriptions-web-system":true,"echo-subscriptions-email-user-rights":true,"echo-subscriptions-web-user-rights":true,"echo-subscriptions-email-other":false,
+"echo-subscriptions-web-other":true,"echo-subscriptions-email-edit-user-talk":false,"echo-subscriptions-web-edit-user-talk":true,"echo-subscriptions-email-reverted":false,"echo-subscriptions-web-reverted":true,"echo-subscriptions-email-article-linked":false,"echo-subscriptions-web-article-linked":false,"echo-subscriptions-email-mention":false,"echo-subscriptions-web-mention":true,"echo-subscriptions-web-edit-thank":true,"echo-subscriptions-email-edit-thank":false,"echo-subscriptions-web-flow-discussion":true,"echo-subscriptions-email-flow-discussion":false,"gettingstarted-task-toolbar-show-intro":true,"uls-preferences":"","multimediaviewer-enable":true,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":
+false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"searchNs118":false,"searchNs119":false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"searchNs828":false,"searchNs829":false,"searchNs2600":false,"gadget-teahouse":1,"gadget-ReferenceTooltips":1,"gadget-geonotice":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-refToolbar":1,"gadget-mySandbox":1,"gadget-featured-articles-links":1,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});}
+/* cache key: enwiki:resourceloader:filter:minify-js:7:8825215e3b8330f97c8b320b947fb51c */</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.viewPageTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+}</script>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static-1.24wmf17/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Ray_tracing_graphics skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">Ray tracing (graphics)</span></h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-navigation">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="hatnote">Not to be confused with <a href="/wiki/Ray_casting" title="Ray casting">Ray casting</a>&#160;or <a href="/wiki/Ray_tracing_(physics)" title="Ray tracing (physics)">Ray tracing (physics)</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px;"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="262" data-file-height="204" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing/1" title="Help:Introduction to referencing/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.</span> <small><i>(March 2008)</i></small></span></td>
+</tr>
+</table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;"><a href="/wiki/File:Recursive_raytrace_of_a_sphere.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Recursive_raytrace_of_a_sphere.png/250px-Recursive_raytrace_of_a_sphere.png" width="250" height="250" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/32/Recursive_raytrace_of_a_sphere.png/375px-Recursive_raytrace_of_a_sphere.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/32/Recursive_raytrace_of_a_sphere.png/500px-Recursive_raytrace_of_a_sphere.png 2x" data-file-width="800" data-file-height="800" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Recursive_raytrace_of_a_sphere.png" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.24wmf17/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+This recursive ray tracing of a sphere demonstrates the effects of shallow <a href="/wiki/Depth_of_field" title="Depth of field">depth of field</a>, area light sources and <a href="/wiki/Diffuse_interreflection" title="Diffuse interreflection" class="mw-redirect">diffuse interreflection</a>.</div>
+</div>
+</div>
+<p>In <a href="/wiki/Computer_graphics" title="Computer graphics">computer graphics</a>, <b>ray tracing</b> is a technique for generating an <a href="/wiki/Digital_image" title="Digital image">image</a> by tracing the path of <a href="/wiki/Light" title="Light">light</a> through <a href="/wiki/Pixel" title="Pixel">pixels</a> in an <a href="/wiki/Image_plane" title="Image plane">image plane</a> and simulating the effects of its encounters with virtual objects. The technique is capable of producing a very high degree of visual realism, usually higher than that of typical <a href="/wiki/Scanline_rendering" title="Scanline rendering">scanline rendering</a> methods, but at a greater <a href="/wiki/Computation_time" title="Computation time" class="mw-redirect">computational cost</a>. This makes ray tracing best suited for applications where the image can be rendered slowly ahead of time, such as in still images and film and television <a href="/wiki/Visual_effects" title="Visual effects">visual effects</a>, and more poorly suited for real-time applications like <a href="/wiki/Video_game" title="Video game">video games</a> where speed is critical. Ray tracing is capable of simulating a wide variety of optical effects, such as <a href="/wiki/Reflection_(physics)" title="Reflection (physics)">reflection</a> and <a href="/wiki/Refraction" title="Refraction">refraction</a>, <a href="/wiki/Light_scattering" title="Light scattering">scattering</a>, and <a href="/wiki/Dispersion_(optics)" title="Dispersion (optics)">dispersion</a> phenomena (such as <a href="/wiki/Chromatic_aberration" title="Chromatic aberration">chromatic aberration</a>).</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Algorithm_overview"><span class="tocnumber">1</span> <span class="toctext">Algorithm overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Detailed_description_of_ray_tracing_computer_algorithm_and_its_genesis"><span class="tocnumber">2</span> <span class="toctext">Detailed description of ray tracing computer algorithm and its genesis</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#What_happens_in_nature"><span class="tocnumber">2.1</span> <span class="toctext">What happens in nature</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Ray_casting_algorithm"><span class="tocnumber">2.2</span> <span class="toctext">Ray casting algorithm</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Recursive_ray_tracing_algorithm"><span class="tocnumber">2.3</span> <span class="toctext">Recursive ray tracing algorithm</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Advantages_over_other_rendering_methods"><span class="tocnumber">2.4</span> <span class="toctext">Advantages over other rendering methods</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Disadvantages"><span class="tocnumber">2.5</span> <span class="toctext">Disadvantages</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Reversed_direction_of_traversal_of_scene_by_the_rays"><span class="tocnumber">2.6</span> <span class="toctext">Reversed direction of traversal of scene by the rays</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Example"><span class="tocnumber">2.7</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="#Adaptive_depth_control"><span class="tocnumber">3</span> <span class="toctext">Adaptive depth control</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Bounding_volumes"><span class="tocnumber">4</span> <span class="toctext">Bounding volumes</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#In_real_time"><span class="tocnumber">5</span> <span class="toctext">In real time</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Computational_Complexity"><span class="tocnumber">6</span> <span class="toctext">Computational Complexity</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Algorithm_overview">Algorithm overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=1" title="Edit section: Algorithm overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Ray_trace_diagram.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/300px-Ray_trace_diagram.svg.png" width="300" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/450px-Ray_trace_diagram.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/600px-Ray_trace_diagram.svg.png 2x" data-file-width="875" data-file-height="582" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Ray_trace_diagram.svg" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.24wmf17/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+The ray tracing algorithm builds an image by extending rays into a scene</div>
+</div>
+</div>
+<p>Optical ray tracing describes a method for producing visual images constructed in <a href="/wiki/3D_computer_graphics" title="3D computer graphics">3D computer graphics</a> environments, with more photorealism than either <a href="/wiki/Ray_casting" title="Ray casting">ray casting</a> or <a href="/wiki/Scanline_rendering" title="Scanline rendering">scanline rendering</a> techniques. It works by tracing a path from an imaginary eye through each <a href="/wiki/Pixel" title="Pixel">pixel</a> in a virtual screen, and calculating the color of the object visible through it.</p>
+<p>Scenes in ray tracing are described mathematically by a programmer or by a visual artist (typically using intermediary tools). Scenes may also incorporate data from images and models captured by means such as digital photography.</p>
+<p>Typically, each ray must be tested for intersection with some subset of all the objects in the scene. Once the nearest object has been identified, the algorithm will estimate the incoming light at the point of intersection, examine the material properties of the object, and combine this information to calculate the final color of the pixel. Certain illumination algorithms and reflective or translucent materials may require more rays to be re-cast into the scene.</p>
+<p>It may at first seem counterintuitive or "backwards" to send rays <i>away</i> from the camera, rather than <i>into</i> it (as actual light does in reality), but doing so is many orders of magnitude more efficient. Since the overwhelming majority of light rays from a given light source do not make it directly into the viewer's eye, a "forward" simulation could potentially waste a tremendous amount of computation on light paths that are never recorded.</p>
+<p>Therefore, the shortcut taken in raytracing is to presuppose that a given ray intersects the view frame. After either a maximum number of reflections or a ray traveling a certain distance without intersection, the ray ceases to travel and the pixel's value is updated.<br style="clear:both;" /></p>
+<h2><span class="mw-headline" id="Detailed_description_of_ray_tracing_computer_algorithm_and_its_genesis">Detailed description of ray tracing computer algorithm and its genesis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=2" title="Edit section: Detailed description of ray tracing computer algorithm and its genesis">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="What_happens_in_nature">What happens in nature</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=3" title="Edit section: What happens in nature">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In nature, a light source emits a ray of light which travels, eventually, to a surface that interrupts its progress. One can think of this "ray" as a stream of <a href="/wiki/Photon" title="Photon">photons</a> traveling along the same path. In a perfect vacuum this ray will be a straight line (ignoring <a href="/wiki/General_relativity" title="General relativity">relativistic effects</a>). Any combination of four things might happen with this light ray: <a href="/wiki/Absorption_(electromagnetic_radiation)" title="Absorption (electromagnetic radiation)">absorption</a>, <a href="/wiki/Reflection_(physics)" title="Reflection (physics)">reflection</a>, <a href="/wiki/Refraction" title="Refraction">refraction</a> and <a href="/wiki/Fluorescence" title="Fluorescence">fluorescence</a>. A surface may absorb part of the light ray, resulting in a loss of intensity of the reflected and/or refracted light. It might also reflect all or part of the light ray, in one or more directions. If the surface has any <a href="/wiki/Transparency_(optics)" title="Transparency (optics)" class="mw-redirect">transparent</a> or <a href="/wiki/Transparency_(optics)" title="Transparency (optics)" class="mw-redirect">translucent</a> properties, it refracts a portion of the light beam into itself in a different direction while absorbing some (or all) of the <a href="/wiki/Visible_spectrum" title="Visible spectrum">spectrum</a> (and possibly altering the color). Less commonly, a surface may absorb some portion of the light and fluorescently re-emit the light at a longer wavelength colour in a random direction, though this is rare enough that it can be discounted from most rendering applications. Between absorption, reflection, refraction and fluorescence, all of the incoming light must be accounted for, and no more. A surface cannot, for instance, reflect 66% of an incoming light ray, and refract 50%, since the two would add up to be 116%. From here, the reflected and/or refracted rays may strike other surfaces, where their absorptive, refractive, reflective and fluorescent properties again affect the progress of the incoming rays. Some of these rays travel in such a way that they hit our eye, causing us to see the scene and so contribute to the final rendered image.</p>
+<h3><span class="mw-headline" id="Ray_casting_algorithm">Ray casting algorithm</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=4" title="Edit section: Ray casting algorithm">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="/wiki/Ray_casting" title="Ray casting">Ray casting</a></div>
+<p>The first ray tracing algorithm used for rendering was presented by <a href="/w/index.php?title=Arthur_Appel&amp;action=edit&amp;redlink=1" class="new" title="Arthur Appel (page does not exist)">Arthur Appel</a><sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup> in 1968. This algorithm has since been termed "ray casting". The idea behind ray casting is to shoot rays from the eye, one per pixel, and find the closest object blocking the path of that ray. Think of an image as a screen-door, with each square in the screen being a pixel. This is then the object the eye sees through that pixel. Using the material properties and the effect of the lights in the scene, this algorithm can determine the shading of this object. The simplifying assumption is made that if a surface faces a light, the light will reach that surface and not be blocked or in shadow. The shading of the surface is computed using traditional 3D computer graphics shading models. One important advantage ray casting offered over older <a href="/wiki/Scanline_rendering" title="Scanline rendering">scanline algorithms</a> was its ability to easily deal with non-planar surfaces and solids, such as <a href="/wiki/Cone_(geometry)" title="Cone (geometry)" class="mw-redirect">cones</a> and <a href="/wiki/Sphere" title="Sphere">spheres</a>. If a mathematical surface can be intersected by a ray, it can be rendered using ray casting. Elaborate objects can be created by using <a href="/wiki/Solid_modeling" title="Solid modeling">solid modeling</a> techniques and easily rendered.</p>
+<h3><span class="mw-headline" id="Recursive_ray_tracing_algorithm">Recursive ray tracing algorithm</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=5" title="Edit section: Recursive ray tracing algorithm">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Glasses_800_edit.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Glasses_800_edit.png/300px-Glasses_800_edit.png" width="300" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Glasses_800_edit.png/450px-Glasses_800_edit.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Glasses_800_edit.png/600px-Glasses_800_edit.png 2x" data-file-width="2048" data-file-height="1536" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Glasses_800_edit.png" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.24wmf17/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+Ray tracing can create realistic images.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:BallsRender.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BallsRender.png/300px-BallsRender.png" width="300" height="169" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BallsRender.png/450px-BallsRender.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BallsRender.png/600px-BallsRender.png 2x" data-file-width="1920" data-file-height="1080" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:BallsRender.png" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.24wmf17/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+In addition to the high degree of realism, ray tracing can simulate the effects of a camera due to <a href="/wiki/Depth_of_field" title="Depth of field">depth of field</a> and <a href="/wiki/Aperture" title="Aperture">aperture</a> shape (in this case a <a href="/wiki/Hexagon" title="Hexagon">hexagon</a>).</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Ray-traced_steel_balls.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ray-traced_steel_balls.jpg/300px-Ray-traced_steel_balls.jpg" width="300" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ray-traced_steel_balls.jpg/450px-Ray-traced_steel_balls.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ray-traced_steel_balls.jpg/600px-Ray-traced_steel_balls.jpg 2x" data-file-width="1600" data-file-height="1200" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Ray-traced_steel_balls.jpg" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.24wmf17/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+The number of reflections a “ray” can take and how it is affected each time it encounters a surface is all controlled via software settings during ray tracing. Here, each ray was allowed to reflect up to 16 times. Multiple “reflections of reflections” can thus be seen. <i>Created with <a href="/wiki/Cobalt_(CAD_program)" title="Cobalt (CAD program)">Cobalt</a></i></div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Glass_ochem.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Glass_ochem.png/300px-Glass_ochem.png" width="300" height="150" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Glass_ochem.png/450px-Glass_ochem.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/40/Glass_ochem.png/600px-Glass_ochem.png 2x" data-file-width="2880" data-file-height="1440" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Glass_ochem.png" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.24wmf17/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+The number of <a href="/wiki/Refraction" title="Refraction">refractions</a> a “ray” can take and how it is affected each time it encounters a surface is all controlled via software settings during ray tracing. Here, each ray was allowed to refract and reflect up to 9 times. <a href="/wiki/Fresnel_reflection" title="Fresnel reflection" class="mw-redirect">Fresnel reflections</a> were used. Also note the <a href="/wiki/Caustic_(optics)" title="Caustic (optics)">caustics</a>. <i>Created with <a href="/wiki/Vray" title="Vray" class="mw-redirect">Vray</a></i></div>
+</div>
+</div>
+<p>The next important research breakthrough came from <a href="/wiki/Turner_Whitted" title="Turner Whitted" class="mw-redirect">Turner Whitted</a> in 1979.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> Previous algorithms traced rays from the eye into the scene until they hit an object, but determined the ray color without recursively tracing more rays. Whitted continued the process. When a ray hits a surface, it can generate up to three new types of rays: reflection, refraction, and shadow.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup> A reflection ray is traced in the mirror-reflection direction. The closest object it intersects is what will be seen in the reflection. Refraction rays traveling through transparent material work similarly, with the addition that a refractive ray could be entering or exiting a material. A shadow ray is traced toward each light. If any opaque object is found between the surface and the light, the surface is in shadow and the light does not illuminate it. This recursive ray tracing added more realism to ray traced images.</p>
+<h3><span class="mw-headline" id="Advantages_over_other_rendering_methods">Advantages over other rendering methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=6" title="Edit section: Advantages over other rendering methods">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Ray tracing's popularity stems from its basis in a realistic simulation of lighting over other rendering methods (such as scanline rendering or ray casting). Effects such as reflections and <a href="/wiki/Shadow" title="Shadow">shadows</a>, which are difficult to simulate using other algorithms, are a natural result of the ray tracing algorithm. The computational independence of each ray makes ray tracing amenable to <a href="/wiki/Parallelization" title="Parallelization" class="mw-redirect">parallelization</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Disadvantages">Disadvantages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=7" title="Edit section: Disadvantages">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A serious disadvantage of ray tracing is performance. Scanline algorithms and other algorithms use data coherence to share computations between pixels, while ray tracing normally starts the process anew, treating each eye ray separately. However, this separation offers other advantages, such as the ability to shoot more rays as needed to perform <a href="/wiki/Spatial_anti-aliasing" title="Spatial anti-aliasing">spatial anti-aliasing</a> and improve image quality where needed.</p>
+<p>Although it does handle interreflection and optical effects such as refraction accurately, traditional ray tracing is also not necessarily photorealistic. True photorealism occurs when the <a href="/wiki/Rendering_equation" title="Rendering equation">rendering equation</a> is closely approximated or fully implemented. Implementing the rendering equation gives true photorealism, as the equation describes every physical effect of light flow. However, this is usually infeasible given the computing resources required.</p>
+<p>The realism of all rendering methods can be evaluated as an approximation to the equation. Ray tracing, if it is limited to Whitted's algorithm, is not necessarily the most realistic. Methods that trace rays, but include additional techniques (<a href="/wiki/Photon_mapping" title="Photon mapping">photon mapping</a>, <a href="/wiki/Path_tracing" title="Path tracing">path tracing</a>), give far more accurate simulation of real-world lighting.</p>
+<p>It is also possible to approximate the equation using ray casting in a different way than what is traditionally considered to be "ray tracing". For performance, rays can be clustered according to their direction, with rasterization hardware and depth peeling used to efficiently sum the rays.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Reversed_direction_of_traversal_of_scene_by_the_rays">Reversed direction of traversal of scene by the rays</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=8" title="Edit section: Reversed direction of traversal of scene by the rays">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The process of shooting rays from the eye to the light source to render an image is sometimes called <i>backwards ray tracing</i>, since it is the opposite direction photons actually travel. However, there is confusion with this terminology. Early ray tracing was always done from the eye, and early researchers such as <a href="/w/index.php?title=James_Arvo&amp;action=edit&amp;redlink=1" class="new" title="James Arvo (page does not exist)">James Arvo</a> used the term <i>backwards ray tracing</i> to mean shooting rays from the lights and gathering the results. Therefore it is clearer to distinguish <i>eye-based</i> versus <i>light-based</i> ray tracing.</p>
+<p>While the direct illumination is generally best sampled using eye-based ray tracing, certain indirect effects can benefit from rays generated from the lights. <a href="/wiki/Caustic_(optics)" title="Caustic (optics)">Caustics</a> are bright patterns caused by the focusing of light off a wide reflective region onto a narrow area of (near-)diffuse surface. An algorithm that casts rays directly from lights onto reflective objects, tracing their paths to the eye, will better sample this phenomenon. This integration of eye-based and light-based rays is often expressed as bidirectional path tracing, in which paths are traced from both the eye and lights, and the paths subsequently joined by a connecting ray after some length.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p><a href="/wiki/Photon_mapping" title="Photon mapping">Photon mapping</a> is another method that uses both light-based and eye-based ray tracing; in an initial pass, energetic photons are traced along rays from the light source so as to compute an estimate of radiant flux as a function of 3-dimensional space (the eponymous photon map itself). In a subsequent pass, rays are traced from the eye into the scene to determine the visible surfaces, and the photon map is used to estimate the illumination at the visible surface points.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup> The advantage of photon mapping versus bidirectional path tracing is the ability to achieve significant reuse of photons, reducing computation, at the cost of statistical bias.</p>
+<p>An additional problem occurs when light must pass through a very narrow aperture to illuminate the scene (consider a darkened room, with a door slightly ajar leading to a brightly lit room), or a scene in which most points do not have direct line-of-sight to any light source (such as with ceiling-directed light fixtures or <a href="/wiki/Torchiere" title="Torchiere" class="mw-redirect">torchieres</a>). In such cases, only a very small subset of paths will transport energy; <a href="/wiki/Metropolis_light_transport" title="Metropolis light transport">Metropolis light transport</a> is a method which begins with a random search of the path space, and when energetic paths are found, reuses this information by exploring the nearby space of rays.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:PathOfRays.svg" class="image"><img alt="PathOfRays.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/PathOfRays.svg/220px-PathOfRays.svg.png" width="220" height="143" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/PathOfRays.svg/330px-PathOfRays.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/16/PathOfRays.svg/440px-PathOfRays.svg.png 2x" data-file-width="402" data-file-height="261" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:PathOfRays.svg" class="internal" title="Enlarge"><img src="//bits.wikimedia.org/static-1.24wmf17/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+</div>
+</div>
+</div>
+<p>To the right is an image showing a simple example of a path of rays recursively generated from the camera (or eye) to the light source using the above algorithm. A diffuse surface reflects light in all directions.</p>
+<p>First, a ray is created at an eyepoint and traced through a pixel and into the scene, where it hits a diffuse surface. From that surface the algorithm recursively generates a reflection ray, which is traced through the scene, where it hits another diffuse surface. Finally, another reflection ray is generated and traced through the scene, where it hits the light source and is absorbed. The color of the pixel now depends on the colors of the first and second diffuse surface and the color of the light emitted from the light source. For example if the light source emitted white light and the two diffuse surfaces were blue, then the resulting color of the pixel is blue.</p>
+<h3><span class="mw-headline" id="Example">Example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=9" title="Edit section: Example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="metadata plainlinks ambox mbox-small-left ambox-style" role="presentation">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/20px-Edit-clear.svg.png" width="20" height="20" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/30px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b><a href="/wiki/Wikipedia:CFORK" title="Wikipedia:CFORK" class="mw-redirect">duplicates</a>, in whole or part, the scope of other sections</b>, specifically, <a href="/wiki/Line%E2%80%93sphere_intersection" title="Line–sphere intersection">Line–sphere intersection</a>. <small><i>(May 2014)</i></small></span></td>
+</tr>
+</table>
+<p>As a demonstration of the principles involved in raytracing, let us consider how one would find the intersection between a ray and a sphere. This is merely the math behind the <a href="/wiki/Line%E2%80%93sphere_intersection" title="Line–sphere intersection">line–sphere intersection</a> and the subsequent determination of the colour of the pixel being calculated. There is, of course, far more to the general process of raytracing, but this demonstrates an example of the algorithms used.</p>
+<p>In <a href="/wiki/Vector_notation" title="Vector notation">vector notation</a>, the equation of a sphere with center <img class="mwe-math-fallback-png-inline tex" alt="\mathbf c" src="//upload.wikimedia.org/math/c/9/a/c9a972007073f0910c7cfb51b859bed9.png" /> and radius <img class="mwe-math-fallback-png-inline tex" alt="\mathbf r" src="//upload.wikimedia.org/math/d/1/1/d11b02d2496069c6daadd761595967b5.png" /> is</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="\left\Vert \mathbf x - \mathbf c \right\Vert^2=r^2." src="//upload.wikimedia.org/math/4/5/c/45c1aeaf4b80745afefc078c67685c62.png" /></dd>
+</dl>
+<p>Any point on a ray starting from point <img class="mwe-math-fallback-png-inline tex" alt="\mathbf s" src="//upload.wikimedia.org/math/1/7/a/17a7f439a09c58cee926a2420aed0447.png" /> with direction <img class="mwe-math-fallback-png-inline tex" alt="\mathbf d" src="//upload.wikimedia.org/math/e/2/2/e22d2980e688655b7a4f720c34bf5855.png" /> (here <img class="mwe-math-fallback-png-inline tex" alt="\mathbf d" src="//upload.wikimedia.org/math/e/2/2/e22d2980e688655b7a4f720c34bf5855.png" /> is a <a href="/wiki/Unit_vector" title="Unit vector">unit vector</a>) can be written as</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="\mathbf x=\mathbf s+t\mathbf d," src="//upload.wikimedia.org/math/3/1/7/317b595572ee2b8cba470bc23f97e3c0.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-png-inline tex" alt=" t" src="//upload.wikimedia.org/math/e/3/5/e358efa489f58062f10dd7316b65649e.png" /> is its distance between <img class="mwe-math-fallback-png-inline tex" alt="\mathbf x" src="//upload.wikimedia.org/math/9/b/1/9b15a163160465cf38245ff82c459ea0.png" /> and <img class="mwe-math-fallback-png-inline tex" alt="\mathbf s" src="//upload.wikimedia.org/math/1/7/a/17a7f439a09c58cee926a2420aed0447.png" />. In our problem, we know <img class="mwe-math-fallback-png-inline tex" alt="\mathbf c" src="//upload.wikimedia.org/math/c/9/a/c9a972007073f0910c7cfb51b859bed9.png" />, <img class="mwe-math-fallback-png-inline tex" alt="\mathbf r" src="//upload.wikimedia.org/math/d/1/1/d11b02d2496069c6daadd761595967b5.png" />, <img class="mwe-math-fallback-png-inline tex" alt="\mathbf s" src="//upload.wikimedia.org/math/1/7/a/17a7f439a09c58cee926a2420aed0447.png" /> (e.g. the position of a light source) and <img class="mwe-math-fallback-png-inline tex" alt="\mathbf d" src="//upload.wikimedia.org/math/e/2/2/e22d2980e688655b7a4f720c34bf5855.png" />, and we need to find <img class="mwe-math-fallback-png-inline tex" alt=" t" src="//upload.wikimedia.org/math/e/3/5/e358efa489f58062f10dd7316b65649e.png" />. Therefore, we substitute for <img class="mwe-math-fallback-png-inline tex" alt="\mathbf x" src="//upload.wikimedia.org/math/9/b/1/9b15a163160465cf38245ff82c459ea0.png" />:</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="\left\Vert\mathbf{s}+t\mathbf{d}-\mathbf{c}\right\Vert^{2}=r^2." src="//upload.wikimedia.org/math/1/9/d/19db5331cb416acd27e633a844418cbe.png" /></dd>
+</dl>
+<p>Let <img class="mwe-math-fallback-png-inline tex" alt="\mathbf{v}\ \stackrel{\mathrm{def}}{=}\  \mathbf{s}-\mathbf{c}" src="//upload.wikimedia.org/math/1/e/3/1e328cef6d853f1d19fd8f10260c3e05.png" /> for simplicity; then</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="\left\Vert\mathbf{v}+t\mathbf{d}\right\Vert^{2}=r^{2}" src="//upload.wikimedia.org/math/f/5/5/f5543b73b7d96daf6b25768305d0a2df.png" /></dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="\mathbf{v}^2+t^2\mathbf{d}^2+2\mathbf{v}\cdot t\mathbf{d}=r^2" src="//upload.wikimedia.org/math/0/c/2/0c2869c400d85ce6a427c10619b8cc1c.png" /></dd>
+</dl>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="(\mathbf{d}^2)t^2+(2\mathbf{v}\cdot\mathbf{d})t+(\mathbf{v}^2-r^2)=0." src="//upload.wikimedia.org/math/d/a/3/da36573a72368d46482b8654889afbc9.png" /></dd>
+</dl>
+<p>Knowing that d is a unit vector allows us this minor simplification:</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="t^2+(2\mathbf{v}\cdot\mathbf{d})t+(\mathbf{v}^2-r^2)=0." src="//upload.wikimedia.org/math/6/b/d/6bd87d1d3d01d01e4a34cf6730a7e478.png" /></dd>
+</dl>
+<p>This <a href="/wiki/Quadratic_equation" title="Quadratic equation">quadratic equation</a> has solutions</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="t=\frac{-(2\mathbf{v}\cdot\mathbf{d})\pm\sqrt{(2\mathbf{v}\cdot\mathbf{d})^2-4(\mathbf{v}^2-r^2)}}{2}=-(\mathbf{v}\cdot\mathbf{d})\pm\sqrt{(\mathbf{v}\cdot\mathbf{d})^2-(\mathbf{v}^2-r^2)}." src="//upload.wikimedia.org/math/9/d/6/9d62d39e5a918e2484475d9954d8f71d.png" /></dd>
+</dl>
+<p>The two values of <img class="mwe-math-fallback-png-inline tex" alt="t" src="//upload.wikimedia.org/math/e/3/5/e358efa489f58062f10dd7316b65649e.png" /> found by solving this equation are the two ones such that <img class="mwe-math-fallback-png-inline tex" alt="\mathbf s+t\mathbf d" src="//upload.wikimedia.org/math/c/b/8/cb865003475d27c58d8efef35c6f7ea9.png" /> are the points where the ray intersects the sphere.</p>
+<p>Any value which is negative does not lie on the ray, but rather in the opposite <a href="/wiki/Line_(mathematics)" title="Line (mathematics)" class="mw-redirect">half-line</a> (i.e. the one starting from <img class="mwe-math-fallback-png-inline tex" alt="\mathbf s" src="//upload.wikimedia.org/math/1/7/a/17a7f439a09c58cee926a2420aed0447.png" /> with opposite direction).</p>
+<p>If the quantity under the square root ( the <a href="/wiki/Quadratic_equation#Discriminant" title="Quadratic equation">discriminant</a> ) is negative, then the ray does not intersect the sphere.</p>
+<p>Let us suppose now that there is at least a positive solution, and let <img class="mwe-math-fallback-png-inline tex" alt="t" src="//upload.wikimedia.org/math/e/3/5/e358efa489f58062f10dd7316b65649e.png" /> be the minimal one. In addition, let us suppose that the sphere is the nearest object on our scene intersecting our ray, and that it is made of a reflective material. We need to find in which direction the light ray is reflected. The laws of <a href="/wiki/Reflection_(physics)" title="Reflection (physics)">reflection</a> state that the angle of reflection is equal and opposite to the angle of incidence between the incident ray and the <a href="/wiki/Surface_normal" title="Surface normal" class="mw-redirect">normal</a> to the sphere.</p>
+<p>The normal to the sphere is simply</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="\mathbf n=\frac{\mathbf y- \mathbf c}{\left\Vert\mathbf y- \mathbf c\right\Vert}," src="//upload.wikimedia.org/math/2/2/3/223f82bf768ed1a35258ad3bab099483.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-png-inline tex" alt="\mathbf y=\mathbf s+t\mathbf d" src="//upload.wikimedia.org/math/4/3/e/43e159fdce9e4aa2d22cfc8c23804030.png" /> is the intersection point found before. The reflection direction can be found by a <a href="/wiki/Reflection_(mathematics)" title="Reflection (mathematics)">reflection</a> of <img class="mwe-math-fallback-png-inline tex" alt="\mathbf d" src="//upload.wikimedia.org/math/e/2/2/e22d2980e688655b7a4f720c34bf5855.png" /> with respect to <img class="mwe-math-fallback-png-inline tex" alt="\mathbf n" src="//upload.wikimedia.org/math/5/9/6/59652de65db12a695fb27fb1608aef30.png" />, that is</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="\mathbf r = \mathbf d - 2(\mathbf n \cdot \mathbf d ) \mathbf n." src="//upload.wikimedia.org/math/b/9/2/b92ed2a9887167f024d903da18a80510.png" /></dd>
+</dl>
+<p>Thus the reflected ray has equation</p>
+<dl>
+<dd><img class="mwe-math-fallback-png-inline tex" alt="\mathbf x = \mathbf y  + u \mathbf r. \, " src="//upload.wikimedia.org/math/2/9/5/295432cce3a42e35d986ed3d26c61de6.png" /></dd>
+</dl>
+<p>Now we only need to compute the intersection of the latter ray with our <a href="/wiki/Field_of_view" title="Field of view">field of view</a>, to get the pixel which our reflected light ray will hit. Lastly, this pixel is set to an appropriate color, taking into account how the color of the original light source and the one of the sphere are combined by the reflection.</p>
+<h2><span class="mw-headline" id="Adaptive_depth_control">Adaptive depth control</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=10" title="Edit section: Adaptive depth control">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This means that we stop generating reflected/transmitted rays when the computed intensity becomes less than a certain threshold. You must always set a certain maximum depth or else the program would generate an infinite number of rays. But it is not always necessary to go to the maximum depth if the surfaces are not highly reflective. To test for this the ray tracer must compute and keep the product of the global and reflection coefficients as the rays are traced.</p>
+<p>Example: let Kr = 0.5 for a set of surfaces. Then from the first surface the maximum contribution is 0.5, for the reflection from the second: 0.5 * 0.5 = 0.25, the third: 0.25 * 0.5 = 0.125, the fourth: 0.125 * 0.5 = 0.0625, the fifth: 0.0625 * 0.5 = 0.03125, etc. In addition we might implement a distance attenuation factor such as 1/D2, which would also decrease the intensity contribution.</p>
+<p>For a transmitted ray we could do something similar but in that case the distance traveled through the object would cause even faster intensity decrease. As an example of this, Hall &amp; Greenberg<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (May 2013)">citation needed</span></a></i>]</sup>found that even for a very reflective scene, using this with a maximum depth of 15 resulted in an average ray tree depth of 1.7.</p>
+<h2><span class="mw-headline" id="Bounding_volumes">Bounding volumes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=11" title="Edit section: Bounding volumes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>We enclose groups of objects in sets of <a href="/wiki/Bounding_volume_hierarchy" title="Bounding volume hierarchy">hierarchical bounding volumes</a> and first test for intersection with the <a href="/wiki/Bounding_volume" title="Bounding volume">bounding volume</a>, and then only if there is an intersection, against the objects enclosed by the volume.</p>
+<p>Bounding volumes should be easy to test for intersection, for example a sphere or box (slab). The best bounding volume will be determined by the shape of the underlying object or objects. For example, if the objects are long and thin then a sphere will enclose mainly empty space and a box is much better. Boxes are also easier for hierarchical bounding volumes.</p>
+<p>Note that using a hierarchical system like this (assuming it is done carefully) changes the intersection computational time from a linear dependence on the number of objects to something between linear and a logarithmic dependence. This is because, for a perfect case, each intersection test would divide the possibilities by two, and we would have a binary tree type structure. Spatial subdivision methods, discussed below, try to achieve this.</p>
+<p>Kay &amp; Kajiya give a list of desired properties for hierarchical bounding volumes:</p>
+<ul>
+<li>Subtrees should contain objects that are near each other and the further down the tree the closer should be the objects.</li>
+<li>The volume of each node should be minimal.</li>
+<li>The sum of the volumes of all bounding volumes should be minimal.</li>
+<li>Greater attention should be placed on the nodes near the root since pruning a branch near the root will remove more potential objects than one farther down the tree.</li>
+<li>The time spent constructing the hierarchy should be much less than the time saved by using it.</li>
+</ul>
+<h2><span class="mw-headline" id="In_real_time">In real time</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=12" title="Edit section: In real time">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The first implementation of a "real-time" ray-tracer was credited at the 2005 <a href="/wiki/SIGGRAPH" title="SIGGRAPH">SIGGRAPH</a> computer graphics conference as the REMRT/RT tools developed in 1986 by <a href="/wiki/Mike_Muuss" title="Mike Muuss">Mike Muuss</a> for the <a href="/wiki/BRL-CAD" title="BRL-CAD">BRL-CAD</a> solid modeling system. Initially published in 1987 at <a href="/wiki/USENIX" title="USENIX">USENIX</a>, the BRL-CAD ray-tracer is the first known implementation of a parallel network distributed ray-tracing system that achieved several frames per second in rendering performance.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11"><span>[</span>11<span>]</span></a></sup> This performance was attained by means of the highly optimized yet platform independent LIBRT ray-tracing engine in BRL-CAD and by using solid implicit <a href="/wiki/Constructive_solid_geometry" title="Constructive solid geometry">CSG</a> geometry on several shared memory parallel machines over a commodity network. BRL-CAD's ray-tracer, including REMRT/RT tools, continue to be available and developed today as <a href="/wiki/Open_source" title="Open source">Open source</a> software.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<p>Since then, there have been considerable efforts and research towards implementing ray tracing in real time speeds for a variety of purposes on stand-alone desktop configurations. These purposes include interactive 3D graphics applications such as <a href="/wiki/Demo_(computer_programming)" title="Demo (computer programming)">demoscene productions</a>, <a href="/wiki/Video_game" title="Video game">computer and video games</a>, and image rendering. Some real-time software 3D engines based on ray tracing have been developed by hobbyist <a href="/wiki/Demoscene" title="Demoscene">demo programmers</a> since the late 1990s.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>13<span>]</span></a></sup></p>
+<p>The <a href="/wiki/OpenRT" title="OpenRT">OpenRT</a> project includes a highly optimized software core for ray tracing along with an <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a>-like API in order to offer an alternative to the current <a href="/wiki/Rasterisation" title="Rasterisation">rasterisation</a> based approach for interactive 3D graphics. <a href="/wiki/Ray_tracing_hardware" title="Ray tracing hardware">Ray tracing hardware</a>, such as the experimental <a href="/wiki/Ray_Processing_Unit" title="Ray Processing Unit" class="mw-redirect">Ray Processing Unit</a> developed at the <a href="/wiki/Saarland_University" title="Saarland University">Saarland University</a>, has been designed to accelerate some of the computationally intensive operations of ray tracing. On March 16, 2007, the University of Saarland revealed an implementation of a high-performance ray tracing engine that allowed computer games to be rendered via ray tracing without intensive resource usage.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14"><span>[</span>14<span>]</span></a></sup></p>
+<p>On June 12, 2008 Intel demonstrated a special version of <i><a href="/wiki/Enemy_Territory:_Quake_Wars" title="Enemy Territory: Quake Wars">Enemy Territory: Quake Wars</a></i>, titled <i><a href="/wiki/Quake_Wars:_Ray_Traced" title="Quake Wars: Ray Traced">Quake Wars: Ray Traced</a></i>, using ray tracing for rendering, running in basic HD (720p) resolution. ETQW operated at 14-29 frames per second. The demonstration ran on a 16-core (4 socket, 4 core) Xeon Tigerton system running at 2.93&#160;GHz.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>15<span>]</span></a></sup></p>
+<p>At SIGGRAPH 2009, Nvidia announced <a href="/wiki/OptiX" title="OptiX">OptiX</a>, a free API for real-time ray tracing on Nvidia GPUs. The API exposes seven programmable entry points within the ray tracing pipeline, allowing for custom cameras, ray-primitive intersections, shaders, shadowing, etc. This flexibility enables bidirectional path tracing, Metropolis light transport, and many other rendering algorithms that cannot be implemented with tail recursion.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16"><span>[</span>16<span>]</span></a></sup> Nvidia has shipped over 350,000,000 OptiX capable GPUs as of April 2013. OptiX-based renderers are used in <a href="/wiki/Adobe_Systems" title="Adobe Systems">Adobe</a> <a href="/wiki/AfterEffects" title="AfterEffects" class="mw-redirect">AfterEffects</a>, Bunkspeed Shot, <a href="/wiki/Autodesk_Maya" title="Autodesk Maya">Autodesk Maya</a>, <a href="/wiki/3ds_max" title="3ds max" class="mw-redirect">3ds max</a>, and many other renderers.</p>
+<p><a href="/wiki/Imagination_Technologies" title="Imagination Technologies">Imagination Technologies</a> offers a free <a href="/wiki/API" title="API" class="mw-redirect">API</a> called <a href="/wiki/OpenRL" title="OpenRL">OpenRL</a> which accelerates <a href="/wiki/Tail_recursion" title="Tail recursion" class="mw-redirect">tail recursive</a> ray tracing-based rendering algorithms and, together with their proprietary <a href="/wiki/Ray_tracing_hardware" title="Ray tracing hardware">ray tracing hardware</a>, works with <a href="/wiki/Autodesk_Maya" title="Autodesk Maya">Autodesk Maya</a> to provide what <a href="/wiki/3D_World" title="3D World">3D World</a> calls "real-time raytracing to the everyday artist".<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>17<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Computational_Complexity">Computational Complexity</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=13" title="Edit section: Computational Complexity">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Various complexity results have been proven for certain formulations of the ray tracing problem. In particular, if the decision version of the ray tracing problem is defined as follows<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>18<span>]</span></a></sup> - given a light ray's initial position and direction and some fixed point, does the ray eventually reach that point, then the referenced paper proves the following results&#160;:-</p>
+<ul>
+<li>Ray tracing in 3D optical systems with a finite set of reflective or refractive objects represented by a system of rational quadratic inequalities is undecidable.</li>
+<li>Ray tracing in 3D optical systems with a finite set of refractive objects represented by a system of rational linear inequalities is undecidable.</li>
+<li>Ray tracing in 3D optical systems with a finite set of rectangular reflective or refractive objects is undecidable.</li>
+<li>Ray tracing in 3D optical systems with a finite set of reflective or partially reflective objects represented by a system of linear inequalities, some of which can be irrational is undecidable.</li>
+<li>Ray tracing in 3D optical systems with a finite set of reflective or partially reflective objects represented by a system of rational linear inequalities is PSPACE-hard.</li>
+<li>For any dimension equal to or greater than 2, ray tracing with a finite set of parallel and perpendicular reflective surfaces represented by rational linear inequalities is in PSPACE.</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=14" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px;margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9;font-size:85%;line-height:110%;max-width:175px;">
+<tr valign="middle">
+<td style="text-align:center;"><a href="/wiki/File:5-cell.gif" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/5-cell.gif/28px-5-cell.gif" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/5-cell.gif/42px-5-cell.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d8/5-cell.gif/56px-5-cell.gif 2x" data-file-width="252" data-file-height="252" /></a></td>
+<td style="padding:0 0.2em;vertical-align:middle;font-style:italic;font-weight:bold;"><a href="/wiki/Portal:Computer_graphics" title="Portal:Computer graphics">Computer graphics portal</a></td>
+</tr>
+</table>
+</div>
+<ul>
+<li><a href="/wiki/Beam_tracing" title="Beam tracing">Beam tracing</a></li>
+<li><a href="/wiki/Cone_tracing" title="Cone tracing">Cone tracing</a></li>
+<li><a href="/wiki/Distributed_ray_tracing" title="Distributed ray tracing">Distributed ray tracing</a></li>
+<li><a href="/wiki/Global_illumination" title="Global illumination">Global illumination</a></li>
+<li><a href="/wiki/List_of_ray_tracing_software" title="List of ray tracing software">List of ray tracing software</a></li>
+<li><a href="/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a></li>
+<li><a href="/wiki/Progressive_refinement" title="Progressive refinement">Progressive refinement</a></li>
+<li><a href="/wiki/Rendering_(computer_graphics)" title="Rendering (computer graphics)">Rendering</a></li>
+<li><a href="/wiki/Specular_reflection" title="Specular reflection">Specular reflection</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Appel A. (1968) <i><a rel="nofollow" class="external text" href="http://graphics.stanford.edu/courses/Appel.pdf">Some techniques for shading machine renderings of solids</a></i>. AFIPS Conference Proc. 32 pp.37-45</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Whitted T. (1979) <i><a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.156.1534">An improved illumination model for shaded display</a></i>. Proceedings of the 6th annual conference on Computer graphics and interactive techniques</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation journal">Tomas Nikodym (June 2010). <a rel="nofollow" class="external text" href="https://dip.felk.cvut.cz/browse/pdfcache/nikodtom_2010bach.pdf">"Ray Tracing Algorithm For Interactive Applications"</a>. <i>Czech Technical University, FEE</i>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.atitle=Ray+Tracing+Algorithm+For+Interactive+Applications&amp;rft.aulast=Tomas+Nikodym&amp;rft.au=Tomas+Nikodym&amp;rft.date=June+2010&amp;rft.genre=article&amp;rft_id=https%3A%2F%2Fdip.felk.cvut.cz%2Fbrowse%2Fpdfcache%2Fnikodtom_2010bach.pdf&amp;rft.jtitle=Czech+Technical+University%2C+FEE&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">A. Chalmers, T. Davis, and E. Reinhard. Practical parallel rendering, <a href="/wiki/Special:BookSources/1568811799" class="internal mw-magiclink-isbn">ISBN 1-56881-179-9</a>. AK Peters, Ltd., 2002.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://http.developer.nvidia.com/GPUGems2/gpugems2_chapter38.html">GPU Gems 2, Chapter 38. High-Quality Global Illumination Rendering Using Rasterization, Addison-Wesley</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation journal">Eric P. Lafortune and Yves D. Willems (December 1993). <a rel="nofollow" class="external text" href="http://www.graphics.cornell.edu/~eric/Portugal.html">"Bi-Directional Path Tracing"</a>. <i>Proceedings of Compugraphics '93</i>: 145–153.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.atitle=Bi-Directional+Path+Tracing&amp;rft.au=Eric+P.+Lafortune+and+Yves+D.+Willems&amp;rft.aulast=Eric+P.+Lafortune+and+Yves+D.+Willems&amp;rft.date=December+1993&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.graphics.cornell.edu%2F~eric%2FPortugal.html&amp;rft.jtitle=Proceedings+of+Compugraphics+%2793&amp;rft.pages=145-153&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web">Péter Dornbach. <a rel="nofollow" class="external text" href="http://www.cescg.org/CESCG98/PDornbach/index.html">"Implementation of bidirectional ray tracing algorithm"</a><span class="reference-accessdate">. Retrieved 2008-06-11</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.aulast=P%C3%A9ter+Dornbach&amp;rft.au=P%C3%A9ter+Dornbach&amp;rft.btitle=Implementation+of+bidirectional+ray+tracing+algorithm&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.cescg.org%2FCESCG98%2FPDornbach%2Findex.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://graphics.ucsd.edu/~henrik/papers/photon_map/global_illumination_using_photon_maps_egwr96.pdf">Global Illumination using Photon Maps</a></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://web.cs.wpi.edu/~emmanuel/courses/cs563/write_ups/zackw/photon_mapping/PhotonMapping.html">Photon Mapping - Zack Waters</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://graphics.stanford.edu/papers/metro/metro.pdf">http://graphics.stanford.edu/papers/metro/metro.pdf</a></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text">See Proceedings of 4th Computer Graphics Workshop, Cambridge, MA, USA, October 1987. Usenix Association, 1987. pp 86–98.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://brlcad.org/d/about">"About BRL-CAD"</a><span class="reference-accessdate">. Retrieved 2009-07-28</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.btitle=About+BRL-CAD&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbrlcad.org%2Fd%2Fabout&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation web">Piero Foscari. <a rel="nofollow" class="external text" href="http://www.acm.org/tog/resources/RTNews/demos/overview.htm">"The Realtime Raytracing Realm"</a>. <i>ACM Transactions on Graphics</i><span class="reference-accessdate">. Retrieved 2007-09-17</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.atitle=The+Realtime+Raytracing+Realm&amp;rft.aulast=Piero+Foscari&amp;rft.au=Piero+Foscari&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.acm.org%2Ftog%2Fresources%2FRTNews%2Fdemos%2Foverview.htm&amp;rft.jtitle=ACM+Transactions+on+Graphics&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation news">Mark Ward (March 16, 2007). <a rel="nofollow" class="external text" href="http://news.bbc.co.uk/1/hi/technology/6457951.stm">"Rays light up life-like graphics"</a>. BBC News<span class="reference-accessdate">. Retrieved 2007-09-17</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.aulast=Mark+Ward&amp;rft.au=Mark+Ward&amp;rft.btitle=Rays+light+up+life-like+graphics&amp;rft.date=March+16%2C+2007&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fnews.bbc.co.uk%2F1%2Fhi%2Ftechnology%2F6457951.stm&amp;rft.pub=BBC+News&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation web">Theo Valich (June 12, 2008). <a rel="nofollow" class="external text" href="http://www.tgdaily.com/html_tmp/content-view-37925-113.html">"Intel converts ET: Quake Wars to ray tracing"</a>. TG Daily<span class="reference-accessdate">. Retrieved 2008-06-16</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.aulast=Theo+Valich&amp;rft.au=Theo+Valich&amp;rft.btitle=Intel+converts+ET%3A+Quake+Wars+to+ray+tracing&amp;rft.date=June+12%2C+2008&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.tgdaily.com%2Fhtml_tmp%2Fcontent-view-37925-113.html&amp;rft.pub=TG+Daily&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><span class="citation web">Nvidia (October 18, 2009). <a rel="nofollow" class="external text" href="http://www.nvidia.com/object/optix.html">"Nvidia OptiX"</a>. Nvidia<span class="reference-accessdate">. Retrieved 2009-11-06</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.aulast=Nvidia&amp;rft.au=Nvidia&amp;rft.btitle=Nvidia+OptiX&amp;rft.date=October+18%2C+2009&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.nvidia.com%2Fobject%2Foptix.html&amp;rft.pub=Nvidia&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.3dworldmag.com/2013/04/16/hardware-review-caustic-series2-r2500-ray-tracing-accelerator-card/">"3DWorld: Hardware review: Caustic Series2 R2500 ray-tracing accelerator card"</a><span class="reference-accessdate">. Retrieved 2013-04-23</span>.</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ARay+tracing+%28graphics%29&amp;rft.btitle=3DWorld%3A+Hardware+review%3A+Caustic+Series2+R2500+ray-tracing+accelerator+card&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.3dworldmag.com%2F2013%2F04%2F16%2Fhardware-review-caustic-series2-r2500-ray-tracing-accelerator-card%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span>3D World, April 2013</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text">"Computability and Complexity of Ray Tracing". <a rel="nofollow" class="external free" href="https://www.cs.duke.edu/~reif/paper/tygar/raytracing.pdf">https://www.cs.duke.edu/~reif/paper/tygar/raytracing.pdf</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit&amp;section=16" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="mbox-small plainlinks" style="border:1px solid #aaa;background-color:#f9f9f9;">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></td>
+<td class="mbox-text plainlist">Wikimedia Commons has media related to <i><b><a href="//commons.wikimedia.org/wiki/Category:Ray_tracing" class="extiw" title="commons:Category:Ray tracing">Ray tracing</a></b></i>.</td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.codermind.com/articles/Raytracer-in-C++-Introduction-What-is-ray-tracing.html">What is ray tracing&#160;?</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.pcper.com/reviews/Graphics-Cards/Ray-Tracing-and-Gaming-Quake-4-Ray-Traced-Project">Ray Tracing and Gaming - Quake 4: Ray Traced Project</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.pcper.com/reviews/Processors/Ray-Tracing-and-Gaming-One-Year-Later">Ray tracing and Gaming - One Year Later</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.few.vu.nl/~kielmann/theses/avdploeg.pdf">Interactive Ray Tracing: The replacement of rasterization?</a></li>
+<li><a rel="nofollow" class="external text" href="http://devmaster.net/posts/2836/raytracing-theory-implementation-part-1-introduction">A series of tutorials on implementing a raytracer using C++</a></li>
+<li><a rel="nofollow" class="external text" href="http://quaxio.com/raytracer/">Tutorial on implementing a raytracer in PHP</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=WV4qXzM641o">The Compleat Angler (1978)</a></li>
+<li><a rel="nofollow" class="external text" href="http://scratchapixel.com/lessons/3d-basic-lessons/lesson-1-writing-a-simple-raytracer/">Writing a Simple Ray Tracer (scratchapixel)</a></li>
+</ul>
+<p><span id="interwiki-de-fa"></span></p>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1004
+CPU time usage: 1.428 seconds
+Real time usage: 1.793 seconds
+Preprocessor visited node count: 1373/1000000
+Preprocessor generated node count: 5867/1500000
+Post‐expand include size: 23126/2048000 bytes
+Template argument size: 842/2048000 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 4/500
+Lua time usage: 0.202/10.000 seconds
+Lua memory usage: 2.92 MB/50 MB
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:26000-0!*!0!!en!4!*!math=0 and timestamp 20140822164929 and revision id 611112877
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://en.wikipedia.org/w/index.php?title=Ray_tracing_(graphics)&amp;oldid=611112877">http://en.wikipedia.org/w/index.php?title=Ray_tracing_(graphics)&amp;oldid=611112877</a>"					</div>
+													<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Ray_tracing_(graphics)" title="Category:Ray tracing (graphics)">Ray tracing (graphics)</a></li><li><a href="/wiki/Category:Geometrical_optics" title="Category:Geometrical optics">Geometrical optics</a></li><li><a href="/wiki/Category:Virtual_reality" title="Category:Virtual reality">Virtual reality</a></li><li><a href="/wiki/Category:Global_illumination_algorithms" title="Category:Global illumination algorithms">Global illumination algorithms</a></li><li><a href="/wiki/Category:Computer_graphics" title="Category:Computer graphics">Computer graphics</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_needing_additional_references_from_March_2008" title="Category:Articles needing additional references from March 2008">Articles needing additional references from March 2008</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Duplicate_articles" title="Category:Duplicate articles">Duplicate articles</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_May_2013" title="Category:Articles with unsourced statements from May 2013">Articles with unsourced statements from May 2013</a></li><li><a href="/wiki/Category:Commons_category_with_local_link_same_as_on_Wikidata" title="Category:Commons category with local link same as on Wikidata">Commons category with local link same as on Wikidata</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Ray+tracing+%28graphics%29&amp;type=signup">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Ray+tracing+%28graphics%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Ray_tracing_(graphics)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Ray_tracing_(graphics)"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label"><span
+							style="display: block;" 							>Variants</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Ray_tracing_(graphics)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if one exists" id="searchButton" class="searchButton" />								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+													<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+													<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+													<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+													<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+													<li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
+													<li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikimedia Shop">Wikimedia Shop</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+													<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+													<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+													<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+													<li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact page</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Ray_tracing_(graphics)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+													<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Ray_tracing_(graphics)" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+													<li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li>
+													<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+													<li id="t-permalink"><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;oldid=611112877" title="Permanent link to this revision of the page">Permanent link</a></li>
+													<li id="t-info"><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;action=info">Page information</a></li>
+													<li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q619942" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li>
+						<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Ray_tracing_%28graphics%29&amp;id=611112877" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+													<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Ray+tracing+%28graphics%29">Create a book</a></li>
+													<li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Ray+tracing+%28graphics%29&amp;oldid=611112877&amp;writer=rl">Download as PDF</a></li>
+													<li id="t-print"><a href="/w/index.php?title=Ray_tracing_(graphics)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+													<li class="interlanguage-link interwiki-bs"><a href="//bs.wikipedia.org/wiki/Ray_Tracing" title="Ray Tracing – Bosnian" lang="bs" hreflang="bs">Bosanski</a></li>
+													<li class="interlanguage-link interwiki-cs"><a href="//cs.wikipedia.org/wiki/Sledov%C3%A1n%C3%AD_paprsku" title="Sledování paprsku – Czech" lang="cs" hreflang="cs">Čeština</a></li>
+													<li class="interlanguage-link interwiki-de badge-Q17437796"><a href="//de.wikipedia.org/wiki/Raytracing" title="Raytracing – German" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-et"><a href="//et.wikipedia.org/wiki/Kiirtej%C3%A4litus" title="Kiirtejälitus – Estonian" lang="et" hreflang="et">Eesti</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="//es.wikipedia.org/wiki/Trazado_de_rayos" title="Trazado de rayos – Spanish" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-eo"><a href="//eo.wikipedia.org/wiki/Radiopa%C5%ADsado" title="Radiopaŭsado – Esperanto" lang="eo" hreflang="eo">Esperanto</a></li>
+													<li class="interlanguage-link interwiki-fa"><a href="//fa.wikipedia.org/wiki/%D8%B1%D9%87%DA%AF%DB%8C%D8%B1%DB%8C_%D9%BE%D8%B1%D8%AA%D9%88_(%DA%AF%D8%B1%D8%A7%D9%81%DB%8C%DA%A9)" title="رهگیری پرتو (گرافیک) – Persian" lang="fa" hreflang="fa">فارسی</a></li>
+													<li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Lancer_de_rayon" title="Lancer de rayon – French" lang="fr" hreflang="fr">Français</a></li>
+													<li class="interlanguage-link interwiki-hr"><a href="//hr.wikipedia.org/wiki/Pra%C4%87enje_zraka" title="Praćenje zraka – Croatian" lang="hr" hreflang="hr">Hrvatski</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="//it.wikipedia.org/wiki/Ray_tracing" title="Ray tracing – Italian" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-he"><a href="//he.wikipedia.org/wiki/%D7%9E%D7%A2%D7%A7%D7%91_%D7%A7%D7%A8%D7%A0%D7%99%D7%99%D7%9D" title="מעקב קרניים – Hebrew" lang="he" hreflang="he">עברית</a></li>
+													<li class="interlanguage-link interwiki-ka"><a href="//ka.wikipedia.org/wiki/%E1%83%A1%E1%83%AE%E1%83%98%E1%83%95%E1%83%94%E1%83%91%E1%83%98%E1%83%A1_%E1%83%A2%E1%83%A7%E1%83%9D%E1%83%A0%E1%83%AA%E1%83%9C%E1%83%90" title="სხივების ტყორცნა – Georgian" lang="ka" hreflang="ka">ქართული</a></li>
+													<li class="interlanguage-link interwiki-lt"><a href="//lt.wikipedia.org/wiki/Spindulio_sekimas" title="Spindulio sekimas – Lithuanian" lang="lt" hreflang="lt">Lietuvių</a></li>
+													<li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Raytracing" title="Raytracing – Dutch" lang="nl" hreflang="nl">Nederlands</a></li>
+													<li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E3%83%AC%E3%82%A4%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%B3%E3%82%B0" title="レイトレーシング – Japanese" lang="ja" hreflang="ja">日本語</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="//pl.wikipedia.org/wiki/%C5%9Aledzenie_promieni" title="Śledzenie promieni – Polish" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-pt"><a href="//pt.wikipedia.org/wiki/Ray_tracing" title="Ray tracing – Portuguese" lang="pt" hreflang="pt">Português</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%B0%D1%81%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%BB%D1%83%D1%87%D0%B5%D0%B9" title="Трассировка лучей – Russian" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-fi"><a href="//fi.wikipedia.org/wiki/S%C3%A4teenseuranta" title="Säteenseuranta – Finnish" lang="fi" hreflang="fi">Suomi</a></li>
+													<li class="interlanguage-link interwiki-sv"><a href="//sv.wikipedia.org/wiki/Str%C3%A5lf%C3%B6ljning" title="Strålföljning – Swedish" lang="sv" hreflang="sv">Svenska</a></li>
+													<li class="interlanguage-link interwiki-tr"><a href="//tr.wikipedia.org/wiki/I%C5%9F%C4%B1n_izleme" title="Işın izleme – Turkish" lang="tr" hreflang="tr">Türkçe</a></li>
+													<li class="interlanguage-link interwiki-uk"><a href="//uk.wikipedia.org/wiki/%D0%A2%D1%80%D0%B0%D1%81%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%BD%D1%96%D0%B2" title="Трасування променів – Ukrainian" lang="uk" hreflang="uk">Українська</a></li>
+													<li class="interlanguage-link interwiki-vi"><a href="//vi.wikipedia.org/wiki/D%C3%B2_tia_(%C4%91%E1%BB%93_h%E1%BB%8Da)" title="Dò tia (đồ họa) – Vietnamese" lang="vi" hreflang="vi">Tiếng Việt</a></li>
+													<li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E5%85%89%E7%B7%9A%E8%BF%BD%E8%B9%A4" title="光線追蹤 – Chinese" lang="zh" hreflang="zh">中文</a></li>
+													<li class="uls-p-lang-dummy"><a href="#"></a></li>
+											</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a action="edit" href="//www.wikidata.org/wiki/Q619942#sitelinks-wikipedia" text="Edit links" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 1 June 2014 at 18:19.<br /></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/wiki/Ray_tracing_(graphics)" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+															<a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+													</li>
+											<li id="footer-poweredbyico">
+															<a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/static-1.24wmf17/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.cite","ext.math.mathjax.enabler","mediawiki.toc","mobile.desktop","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.eventLogging.subscriber","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"],null,true);
+}</script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":228,"wgHostname":"mw1218"});
+}</script>
+	</body>
+</html>
+	

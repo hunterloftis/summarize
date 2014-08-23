@@ -1,0 +1,24 @@
+{
+  "name": "summarize",
+  "version": "1.0.0",
+  "description": "Summarize html content",
+  "keywords": ["language", "english", "readability", "scraping", "summary"],
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Hunter Loftis <hunter@hunterloftis.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
+  },
+  "dependencies": {
+    "glossary": "^0.1.1",
+    "lodash": "^2.4.1",
+    "natural": "^0.1.28",
+    "sentiment": "^1.0.1",
+    "text-statistics": "^0.1.1",
+    "unfluff": "^0.7.0"
+  }
+}
