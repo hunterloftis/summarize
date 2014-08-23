@@ -38,6 +38,8 @@ superagent
 
 ## Summary information
 
+When you call `summarize(html)`, it returns an object with these properties:
+
 #### ok
 
 `true` if content was parseable, `false` if not.
