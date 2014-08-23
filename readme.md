@@ -38,28 +38,28 @@ superagent
 
 ## Summary information
 
-### ok
+#### ok
 
 `true` if content was parseable, `false` if not.
 
-### sentiment
+#### sentiment
 
 A comparative sentiment value where lower = negative and
 higher = positive. 0.06 is pretty positive while 0.01 is fairly neutral.
 
-### title
+#### title
 
 Title, taken from the `<title>` tag.
 
-### topics
+#### topics
 
-Extracted topic keywords in order of importance.
+An array of extracted topic keywords in order of importance.
 
-### words
+#### words
 
 Word count.
 
-### difficulty
+#### difficulty
 
 A normalized (0-1) rating of reading comprehension difficulty.
 Scholarly articles will tend towards one while Justin Beiber's
@@ -67,10 +67,10 @@ twitter will tend towards zero.
 
 (uses the [Smog Index](http://en.wikipedia.org/wiki/SMOG))
 
-### minutes
+#### minutes
 
 Estimated minutes required to read and comprehend.
 
-### image
+#### image
 
 Primary image from the page (or `null` if none found).
