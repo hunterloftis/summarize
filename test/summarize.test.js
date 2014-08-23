@@ -57,8 +57,8 @@ describe('summarize()', function() {
       assert.equal(summary.title, 'An Album? A Minecraft-Style Game? Both!');
     });
 
-    it('extracts 6 topics', function() {
-      assert.sameMembers(summary.topics, ['video game', 'album', 'Rustie', 'I', 'song', 'musicians']);
+    it('extracts 6 sorted topics', function() {
+      assert.sameMembers(summary.topics, ['I', 'song', 'Rustie', 'album', 'musician', 'video game']);
     });
 
     it('counts 270 words', function() {
@@ -94,8 +94,8 @@ describe('summarize()', function() {
       assert.equal(summary.title, 'Wikipedia, the free encyclopedia');
     });
 
-    it('extracts reasonable topics', function() {
-      assert.includeMembers(summary.topics, ['computer', 'graphics', 'technique', 'image', 'pixels']);
+    it('extracts top topics', function() {
+      assert.includeMembers(summary.topics, ['surface', 'object', 'algorithm', 'pixel', 'scene', 'intersection', 'image']);
     });
 
     it('counts 3209 words', function() {
