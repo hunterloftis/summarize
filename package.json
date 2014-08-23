@@ -2,7 +2,14 @@
   "name": "summarize",
   "version": "1.0.0",
   "description": "Summarize html content",
-  "keywords": ["language", "english", "readability", "scraping", "summary"],
+  "keywords": [
+    "language",
+    "english",
+    "readability",
+    "scraping",
+    "summary"
+  ],
+  "repository": "hunterloftis/summarize",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -11,7 +18,8 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^1.9.1",
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.4",
+    "superagent": "^0.18.2"
   },
   "dependencies": {
     "glossary": "^0.1.1",
