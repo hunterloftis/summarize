@@ -13,6 +13,9 @@
   "homepage": "https://github.com/hunterloftis/summarize",
   "bugs": "https://github.com/hunterloftis/summarize/issues",
   "main": "index.js",
+  "bin": {
+    "summarize": "lib/cli.js"
+  },
   "engines": {
     "node": ">= 0.10.x"
   },
@@ -23,8 +26,7 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^1.9.1",
-    "mocha": "^1.21.4",
-    "superagent": "^0.18.2"
+    "mocha": "^1.21.4"
   },
   "dependencies": {
     "glossary": "^0.1.1",
@@ -32,6 +34,7 @@
     "natural": "^0.1.28",
     "sentiment": "^1.0.1",
     "text-statistics": "^0.1.1",
-    "unfluff": "^0.7.0"
+    "unfluff": "^0.7.0",
+    "superagent": "^0.18.2"
   }
 }
