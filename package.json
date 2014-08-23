@@ -10,7 +10,12 @@
     "summary"
   ],
   "repository": "hunterloftis/summarize",
+  "homepage": "https://github.com/hunterloftis/summarize",
+  "bugs": "https://github.com/hunterloftis/summarize/issues",
   "main": "index.js",
+  "engines": {
+    "node": ">= 0.10.x"
+  },
   "scripts": {
     "test": "mocha"
   },
