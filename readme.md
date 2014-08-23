@@ -36,6 +36,22 @@ superagent
   });
 ```
 
+## CLI
+
+```
+npm install -g summarize
+summarize 'http://hapgood.us/2014/08/14/the-web-is-broken-and-we-should-fix-it/'
+
+Title: The Web is Broken and We Should Fix It
+Topics: page, web, control, data, system, one, Ward, guarantee
+Image: http://mikecaulfield.files.wordpress.com/2014/08/web.png
+Sentiment: 0.03389830508474576
+Word count: 555
+Difficulty: 0.7416666666666667
+Minutes to read: 5
+
+```
+
 ## Summary information
 
 When you call `summarize(html)`, it returns an object with these properties:
