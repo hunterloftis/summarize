@@ -1,17 +1,8 @@
 # Summarize
 
-Easily summarize webpage content
+Get summaries of webpage content.
 
-```js
-var summarize = require('summarize');
-var superagent = require('superagent');
-
-superagent
-  .get('http://kotaku.com/an-album-a-minecraft-style-game-both-1625202335')
-  .end(function(res) {
-    console.log(summarize(res.text));
-  });
-```
+[This page](http://kotaku.com/an-album-a-minecraft-style-game-both-1625202335) returns:
 
 ```
 { ok: true,
@@ -28,6 +19,19 @@ superagent
 
 ```
 npm install --save summarize
+```
+
+## Example
+
+```js
+var summarize = require('summarize');
+var superagent = require('superagent');
+
+superagent
+  .get('http://kotaku.com/an-album-a-minecraft-style-game-both-1625202335')
+  .end(function(res) {
+    console.log(summarize(res.text));
+  });
 ```
 
 ## Summary information
