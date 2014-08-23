@@ -110,8 +110,8 @@ describe('summarize()', function() {
       assert.isNull(summary.image);
     });
 
-    it('predicts 17 minutes to read', function() {
-      assert.equal(summary.minutes, 17);
+    it('predicts 30 minutes to read', function() {
+      assert.equal(summary.minutes, 30);
     });
   });
 });
