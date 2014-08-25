@@ -58,7 +58,7 @@ describe('summarize()', function() {
     });
 
     it('extracts 6 sorted topics', function() {
-      assert.sameMembers(summary.topics, ['I', 'song', 'Rustie', 'album', 'musician', 'video game']);
+      assert.deepEqual(summary.topics, ['song', 'Rustie', 'album', 'musician', 'video game']);
     });
 
     it('counts 270 words', function() {
@@ -112,6 +112,15 @@ describe('summarize()', function() {
 
     it('predicts 30 minutes to read', function() {
       assert.equal(summary.minutes, 30);
+    });
+  });
+
+  describe('with a limit argument of 3', function() {
+    var page = fs.readFileSync(path.join(__dirname, 'kotaku.fixture.html'), 'utf-8');
+    var summary = summarize(page, 3);
+
+    it('should return only the top 3 topics', function() {
+      assert.deepEqual(summary.topics, ['song', 'Rustie', 'album']);
     });
   });
 });
